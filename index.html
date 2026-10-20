@@ -1,0 +1,204 @@
+ <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHHUB - Tin công nghệ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar" data-status="active">
+        <div class="container flex-between">
+            <p>Cập nhật tin công nghệ mới nhất</p>
+            <a href="#" class="top-bar__link">Đọc ngay</a>
+        </div>
+    </div>
+
+    <header id="site-header">
+        <div class="container flex-between">
+            <div>
+                <a href="#" class="brand__logo">TECH<span>HUB</span></a>
+                <p class="brand__slogan">Khám phá thế giới công nghệ</p>
+            </div>
+
+            <div class="header-actions">
+                <input type="search" placeholder="Tìm kiếm...">
+                <button class="btn btn-outline">Tìm kiếm</button>
+            </div>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <div class="container">
+            <ul class="menu">
+                <li><a href="#" class="menu-link is-active">Trang chủ</a></li>
+                <li><a href="#" class="menu-link">Tin công nghệ</a></li>
+                <li><a href="#" class="menu-link">Điện thoại</a></li>
+                <li><a href="#" class="menu-link">Máy tính</a></li>
+                <li><a href="#" class="menu-link">Thủ thuật</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container main-content">
+
+        <div class="primary-column">
+
+            <article class="hero-card">
+                <div class="hero-card__media">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1000" alt="Công nghệ">
+                    <span class="badge badge--danger">NỔI BẬT</span>
+                </div>
+
+                <div class="hero-card__content">
+                    <p class="category-tag">Công nghệ</p>
+                    <h1 class="hero-card__title">
+                        Khám phá những xu hướng công nghệ mới nhất
+                    </h1>
+                    <p class="hero-card__excerpt">
+                        Cập nhật những thông tin mới về máy tính, điện thoại và thế giới công nghệ.
+                    </p>
+                    <div class="meta-info">
+                        <span>TECHHUB</span>
+                        <span>•</span>
+                        <span>20/10/2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <h2 class="section-title">Bài viết mới nhất</h2>
+
+            <div class="articles-grid">
+
+                <article class="post-card">
+                    <div class="post-card__thumb">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600" alt="Điện thoại">
+                    </div>
+                    <div class="post-card__body">
+                        <p class="category-tag">Điện thoại</p>
+                        <h3 class="post-card__title">
+                            <a href="#">Khám phá thế hệ điện thoại thông minh mới</a>
+                        </h3>
+                        <p class="post-card__snippet">
+                            Những công nghệ đáng chú ý trên điện thoại hiện nay.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-card__thumb">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600" alt="Laptop">
+                    </div>
+                    <div class="post-card__body">
+                        <p class="category-tag">Máy tính</p>
+                        <h3 class="post-card__title">
+                            <a href="#">Cách lựa chọn laptop phù hợp với nhu cầu</a>
+                        </h3>
+                        <p class="post-card__snippet">
+                            Một số điều cần biết trước khi chọn mua máy tính.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-card__thumb">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600" alt="Linh kiện">
+                    </div>
+                    <div class="post-card__body">
+                        <p class="category-tag">Phần cứng</p>
+                        <h3 class="post-card__title">
+                            <a href="#">Tìm hiểu về linh kiện máy tính</a>
+                        </h3>
+                        <p class="post-card__snippet">
+                            CPU, RAM và card đồ họa có vai trò như thế nào?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-card__thumb">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Làm việc với máy tính">
+                    </div>
+                    <div class="post-card__body">
+                        <p class="category-tag">Thủ thuật</p>
+                        <h3 class="post-card__title">
+                            <a href="#">Những mẹo sử dụng máy tính hữu ích</a>
+                        </h3>
+                        <p class="post-card__snippet">
+                            Một số thủ thuật giúp bạn làm việc hiệu quả hơn.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+        <aside class="secondary-column">
+
+            <section class="widget">
+                <h2 class="widget__heading">Bài viết nổi bật</h2>
+                <ol class="ranking-list">
+                    <li class="ranking-item"><a href="#">Xu hướng công nghệ năm nay</a></li>
+                    <li class="ranking-item"><a href="#">Cách chọn laptop cho học sinh</a></li>
+                    <li class="ranking-item"><a href="#">Những linh kiện PC phổ biến</a></li>
+                    <li class="ranking-item"><a href="#">Mẹo sử dụng máy tính</a></li>
+                    <li class="ranking-item"><a href="#">Tin công nghệ đáng chú ý</a></li>
+                </ol>
+            </section>
+
+            <section class="widget">
+                <h2 class="widget__heading">Đăng ký nhận tin</h2>
+                <p class="widget__desc">
+                    Nhận thông tin công nghệ mới qua email.
+                </p>
+
+                <form class="subscribe-form">
+                    <input type="text" placeholder="Họ và tên">
+                    <input type="email" placeholder="Địa chỉ email">
+                    <button type="submit" class="btn btn-solid">Đăng ký</button>
+                </form>
+            </section>
+
+        </aside>
+    </main>
+
+    <footer id="site-footer">
+        <div class="container footer-grid">
+
+            <div>
+                <a href="#" class="brand__logo brand__logo--light">TECH<span>HUB</span></a>
+                <p class="footer-about">
+                    TECHHUB - Cập nhật tin tức và kiến thức công nghệ.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Liên kết</h3>
+                <ul class="footer-menu">
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Tin công nghệ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Theo dõi chúng tôi</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container flex-between">
+                <p>© 2026 TECHHUB. All rights reserved.</p>
+                <p>Website tin công nghệ</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

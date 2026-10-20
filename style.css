@@ -1,0 +1,489 @@
+/* 1. Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. CSS chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #2563eb;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 3. Selector thuộc tính */
+.top-bar[data-status="active"] {
+    background-color: #0f172a;
+    color: white;
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.top-bar__link {
+    color: #fbbf24;
+}
+
+.top-bar__link:hover {
+    text-decoration: underline;
+}
+
+/* 4. Selector ID */
+#site-header {
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 25px 0;
+}
+
+/* 5. Selector hậu duệ */
+.brand__logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0f172a;
+}
+
+.brand__logo span {
+    color: #2563eb;
+}
+
+/* 6. Class sửa đổi */
+.brand__logo--light {
+    color: white;
+}
+
+.brand__slogan {
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* 7. Ô tìm kiếm */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="search"] {
+    padding: 10px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 25px;
+    background-color: #f8fafc;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}
+
+/* 8. Nút */
+.btn {
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: white;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+
+.btn-outline:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* 9. Thanh điều hướng */
+#main-nav {
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.menu-link {
+    display: block;
+    padding: 15px 0;
+    color: #334155;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.menu-link:hover {
+    color: #2563eb;
+}
+
+.menu-link.is-active {
+    color: #2563eb;
+    border-bottom: 3px solid #2563eb;
+}
+
+/* 10. Chia cột nội dung */
+.main-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.primary-column {
+    width: 70%;
+    min-width: 0;
+}
+
+.secondary-column {
+    width: 30%;
+    min-width: 0;
+}
+
+/* 11. Bài viết nổi bật */
+.hero-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 35px;
+}
+
+.hero-card__media {
+    position: relative;
+}
+
+.hero-card__media img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge--danger {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ef4444;
+    color: white;
+}
+
+.hero-card__content {
+    padding: 25px;
+}
+
+.category-tag {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-card__title {
+    font-size: 28px;
+    line-height: 1.3;
+    margin: 10px 0;
+    color: #0f172a;
+}
+
+.hero-card__excerpt {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.meta-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* 12. Danh sách bài viết */
+.section-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2563eb;
+    padding-left: 12px;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.post-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.post-card__thumb {
+    overflow: hidden;
+}
+
+.post-card__thumb img {
+    width: 100%;
+    height: 200px;
+    transition: transform 0.3s;
+}
+
+.post-card:hover .post-card__thumb img {
+    transform: scale(1.05);
+}
+
+.post-card__body {
+    padding: 18px;
+}
+
+.post-card__title {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 8px 0;
+}
+
+.post-card__title a {
+    color: #0f172a;
+}
+
+.post-card__title a:hover {
+    color: #2563eb;
+}
+
+.post-card__snippet {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* 13. Cột xếp hạng */
+.widget {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.widget__heading {
+    font-size: 19px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2563eb;
+}
+
+.ranking-list {
+    padding-left: 25px;
+}
+
+.ranking-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.ranking-item a {
+    color: #334155;
+}
+
+.ranking-item a:hover {
+    color: #2563eb;
+}
+
+/* Ba bài đầu tiên có điểm nhấn màu cam */
+.ranking-item:nth-child(-n+3) {
+    border-left: 3px solid #f97316;
+    padding-left: 10px;
+}
+
+.ranking-item:nth-child(-n+3) a {
+    color: #ea580c;
+    font-weight: bold;
+}
+
+/* Bỏ đường viền bài cuối */
+.ranking-item:last-child {
+    border-bottom: none;
+}
+
+/* 14. Form đăng ký */
+.widget__desc {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-solid {
+    width: 100%;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-solid:hover {
+    background-color: #1d4ed8;
+}
+
+/* 15. Chân trang */
+#site-footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding-top: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 35px;
+}
+
+.footer-about {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.footer-title {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-menu {
+    list-style: none;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+#site-footer a {
+    color: #94a3b8;
+    transition: color 0.3s;
+}
+
+#site-footer a:hover {
+    color: white;
+}
+
+#site-footer .brand__logo--light {
+    color: white;
+}
+
+#site-footer .brand__logo--light span {
+    color: #60a5fa;
+}
+
+.footer-bottom {
+    border-top: 1px solid #334155;
+    padding: 18px 0;
+    font-size: 13px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* 16. Hiển thị trên điện thoại */
+@media (max-width: 768px) {
+    .flex-between {
+        flex-wrap: wrap;
+    }
+
+    .header-actions {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    input[type="search"] {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .primary-column,
+    .secondary-column {
+        width: 100%;
+    }
+
+    .hero-card__media img {
+        height: 230px;
+    }
+
+    .hero-card__title {
+        font-size: 22px;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-bottom .flex-between {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
